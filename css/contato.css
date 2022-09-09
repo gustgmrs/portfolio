@@ -1,0 +1,60 @@
+.contato-bg {
+  background: var(--cor-3);
+  box-shadow: inset 0px -140px var(--cor-2);
+}
+
+.contato-cont-bg {
+  background: var(--cor-4);
+  width: 92%;
+  border-radius: 5px;
+}
+
+.contato {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+}
+
+.contato-texto h2 {
+  margin-bottom: 20px;
+}
+
+.contato-texto p {
+  max-width: 60ch;
+}
+
+.botao-contato {
+  padding: 15px 50px;
+  justify-self: end;
+}
+
+@media (max-width: 800px) {
+  .contato-bg {
+    box-shadow: none;
+    padding-top: 30px;
+    padding-bottom: 30px
+  }
+
+  .contato {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .botao-contato {
+    justify-self: center;
+    padding: 10px 30px;
+    margin-top: 20px;
+  }
+
+  .contato-texto h2 {
+    text-align: center;
+  }
+
+  .contato-texto p {
+    text-align: center;
+  }
+}

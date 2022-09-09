@@ -1,0 +1,25 @@
+.footer-bg {
+  background: var(--cor-2);
+}
+
+.footer-conteudo {
+  padding-top: 60px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.redes-sociais {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+@media (max-width: 800px) {
+  .footer-conteudo {
+    padding-top: 20px;
+    flex-direction: column;
+    gap: 20px;
+  }
+}

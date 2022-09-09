@@ -1,0 +1,21 @@
+/* Utilitários */
+@import url(utilitario/cores.css);
+@import url(utilitario/tipografia.css);
+@import url(utilitario/componentes.css);
+
+/* Global */
+@import url(./global/global.css);
+@import url(./global/header.css);
+@import url(global/footer.css);
+
+/* Introdução */
+@import url(./intro.css);
+
+/* Formação */
+@import url(./formacao.css);
+
+/* Projetos */
+@import url(./projetos.css);
+
+/* Contato */
+@import url(./contato.css);

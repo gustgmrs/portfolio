@@ -1,0 +1,116 @@
+.formacao-bg{
+  background-image: linear-gradient(
+    to right,
+    var(--cor-3) 50%,
+    var(--cor-2) 0%
+  );
+}
+
+.formacao {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.formacao p {
+  margin-top: 5px;
+  margin-bottom: 60px;
+}
+
+.cursos-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.curso {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: var(--cor-4);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.curso:nth-child(2) {
+  background-color: var(--cor-v-1);
+}
+
+.curso-tipo {
+  margin-bottom: 10px;
+}
+
+.curso-titulo {
+  margin-bottom: 80px;
+  flex: 1;
+  position: relative;
+}
+
+.curso-titulo::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(var(--cor-v-1), red);
+  position: absolute;
+  left: -24px;
+}
+
+.curso-instituicao {
+  display: flex;
+  justify-content: space-between;
+}
+
+.idiomas h3 {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.idiomas h3::before {
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url(../img/idiomas.svg) no-repeat center center;
+  position: absolute;
+  left: -36px;
+  top: -4px;
+}
+
+.idiomas h3::before {
+  position: initial;
+  margin-bottom: 10px;
+}
+
+.idiomas-lista li {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+  .formacao-bg {
+    background-image: initial;
+    background-color: var(--cor-3);
+  }
+
+  .formacao {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .formacao p {
+    margin-top: 5px;
+    margin-bottom: 30px;
+  }
+
+  .cursos-lista {
+    margin-bottom: 50px;
+  }
+  
+}
+
+@media (max-width: 400px) {
+  .cursos-lista {
+    flex-direction: column;
+  }
+}
